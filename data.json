@@ -144,8 +144,8 @@
         "technology": [
             "C/C++"
         ],
-        "banner": "/imgs/projects/VEMDEPIX/vemdepix_thumbnail2.png",
-        "thumbnail": "/imgs/projects/VEMDEPIX/vemdepix_thumbnail2.png",
+        "banner": "/Development-Portfolio-PUBLIC/imgs/projects/VEMDEPIX/vemdepix_thumbnail2.png",
+        "thumbnail": "/Development-Portfolio-PUBLIC/imgs/projects/VEMDEPIX/vemdepix_thumbnail2.png",
         "bannerBackgroundColor": "#6DB6C9",
         "projectPhotos": [
             "/Development-Portfolio-PUBLIC/imgs/projects/VEMDEPIX/1.gif",
@@ -163,6 +163,6 @@
                 "updateDescription": "Atulização de tema de Halloweens"
             }
         ],
-        "projectURL": "/pages/AccessDenied/accessDenied.html"
+        "projectURL": "/Development-Portfolio-PUBLIC/pages/AccessDenied/accessDenied.html"
     }
 ]
