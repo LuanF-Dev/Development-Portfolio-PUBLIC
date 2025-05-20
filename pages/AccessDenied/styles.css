@@ -1,0 +1,79 @@
+/*
+Development Portfolio (v1.0)
+
+Copyright 2025 LuanF-Dev.
+Written by Luan.F (20/05/2025).
+
+This file is part of the Development Portfolio project ("Development-Portfolio").
+
+This project is licensed under the "Attribution-NonCommercial-ShareAlike 4.0 International" license 
+<https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en>
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    /* color: white; */
+    background-color: #1a1a1a;
+    /* background: linear-gradient(to bottom right, #000000, #1a1a1a); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    max-width: 1200px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.warningMessage {
+    font-size: 2.1rem;
+    font-weight: 700;
+    font-family: 'Poppins';
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    /* align-self: flex-start; */
+}
+
+footer {
+    width: 80%;
+    height: 5vh;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .warningMessage {
+        font-size: 1.8rem;
+    }
+}

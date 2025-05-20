@@ -1,0 +1,125 @@
+<!-- 
+Development Portfolio (v1.0)
+
+Copyright 2025 LuanF-Dev.
+Written by Luan.F (20/05/2025).
+
+This file is part of the Development Portfolio project ("Development-Portfolio").
+
+This project is licensed under the "Attribution-NonCommercial-ShareAlike 4.0 International" license 
+<https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en>
+-->
+
+<!doctypehtml>
+    <html lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Portfólio Luan Ferreira</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-PVYCQR0L50" async></script>
+    <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-PVYCQR0L50")</script>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    <div class="header"></div>
+    <div class="container">
+        <div class="container_profile">
+            <div class="container_profile_photo"><img alt="Foto de perfil" class="profile_photo"
+                    src="imgs/user/perfil_1.jpeg"></div>
+            <div class="information_container">
+                <div class="username">Luan Ferreira</div>
+                <div class="career">Desenvolvedor de Software</div>
+                <div class="description">Desenvolvedor Backend e Mobile Backend | Python, C/C++ (para
+                    microcontroladores), JavaScript, React Native, Node.js, PHP e Java.</div>
+                <div class="nav-links"><a href="https://github.com/LuanF-Dev" target="_blank"><i
+                            class="bi bi-github"></i></a> <a
+                        href="https://www.instagram.com/luan.dev_90?utm_source=qr&igsh=cHVpbzZidmVlb284"
+                        target="_blank"><i class="bi bi-instagram"></i></a> <a
+                        href="https://www.linkedin.com/in/luan-ferreira-079a37204" target="_blank"><i
+                            class="bi bi-linkedin"></i></a></div>
+            </div>
+        </div>
+        <div class="section">Projetos</div>
+        <div class="technology-scroll-wrapper">
+            <div class="left arrow-tech"><i class="bi bi-caret-left-fill"></i></div>
+            <div class="container-technology-list"><a href="#python">Python</a> <a href="#javascript">JavaScript</a> <a
+                    href="#typescript">TypeScript</a> <a href="#c-c_plus_plus">C/C++</a> <a href="#django">Django</a> <a
+                    href="#react-native">React Native</a></div>
+            <div class="right arrow-tech"><i class="bi bi-caret-right-fill"></i></div>
+        </div>
+        <div class="title" id="destaques">Destaques</div>
+        <div class="carousel slide" id="heroCarousel" data-interval="5000" data-ride="carousel">
+            <div class="carousel-inner"></div><a href="#heroCarousel" class="outside-arrow carousel-control-prev"
+                data-slide="prev" role="button"><span class="custom-arrow carousel-control-prev-icon"
+                    aria-hidden="true"></span> <span class="sr-only">Anterior</span> </a><a href="#heroCarousel"
+                class="outside-arrow carousel-control-next" data-slide="next" role="button"><span
+                    class="custom-arrow carousel-control-next-icon" aria-hidden="true"></span> <span
+                    class="sr-only">Próximo</span></a>
+        </div>
+        <div class="project_container">
+            <div class="title" id="novidades">Novidades</div>
+            <div class="card-wrapper">
+                <div class="arrow left"><i class="bi bi-chevron-compact-left"></i></div>
+                <div class="project_cards" filter="newness"></div>
+                <div class="arrow right"><i class="bi bi-chevron-compact-right"></i></div>
+            </div>
+            <div class="title" id="todos">Todos</div>
+            <div class="card-wrapper">
+                <div class="arrow left"><i class="bi bi-chevron-compact-left"></i></div>
+                <div class="project_cards" filter="All"></div>
+                <div class="arrow right"><i class="bi bi-chevron-compact-right"></i></div>
+            </div>
+            <div class="title" id="python">Python</div>
+            <div class="card-wrapper">
+                <div class="arrow left"><i class="bi bi-chevron-compact-left"></i></div>
+                <div class="project_cards" filter="Python"></div>
+                <div class="arrow right"><i class="bi bi-chevron-compact-right"></i></div>
+            </div>
+            <div class="title" id="c-c_plus_plus">C/C++</div>
+            <div class="card-wrapper">
+                <div class="arrow left"><i class="bi bi-chevron-compact-left"></i></div>
+                <div class="project_cards" filter="C/C++"></div>
+                <div class="arrow right"><i class="bi bi-chevron-compact-right"></i></div>
+            </div>
+            <div class="title" id="javascript">JavaScript</div>
+            <div class="card-wrapper">
+                <div class="arrow left"><i class="bi bi-chevron-compact-left"></i></div>
+                <div class="project_cards" filter="JavaScript"></div>
+                <div class="arrow right"><i class="bi bi-chevron-compact-right"></i></div>
+            </div>
+            <div class="title" id="typescript">TypeScript</div>
+            <div class="card-wrapper">
+                <div class="arrow left"><i class="bi bi-chevron-compact-left"></i></div>
+                <div class="project_cards" filter="TypeScript"></div>
+                <div class="arrow right"><i class="bi bi-chevron-compact-right"></i></div>
+            </div>
+            <div class="title" id="react-native">React Native</div>
+            <div class="card-wrapper">
+                <div class="arrow left"><i class="bi bi-chevron-compact-left"></i></div>
+                <div class="project_cards" filter="React Native"></div>
+                <div class="arrow right"><i class="bi bi-chevron-compact-right"></i></div>
+            </div>
+            <div class="title" id="django">Django</div>
+            <div class="card-wrapper">
+                <div class="arrow left"><i class="bi bi-chevron-compact-left"></i></div>
+                <div class="project_cards" filter="Django"></div>
+                <div class="arrow right"><i class="bi bi-chevron-compact-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <script>loadHome()</script>
+    <footer>
+        <p>@LuanF-Dev 2025. Todos os direitos reservados
+    </footer>

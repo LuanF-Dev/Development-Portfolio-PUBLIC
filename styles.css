@@ -1,0 +1,709 @@
+/*
+Development Portfolio (v1.0)
+
+Copyright 2025 LuanF-Dev.
+Written by Luan.F (20/05/2025).
+
+This file is part of the Development Portfolio project ("Development-Portfolio").
+
+This project is licensed under the "Attribution-NonCommercial-ShareAlike 4.0 International" license 
+<https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en>
+*/
+
+#loading-screen,
+body,
+html {
+    width: 100%;
+    background-color: #121212;
+    display: flex
+}
+
+.nav-links a,
+.nav-links a i {
+    color: #fff;
+    transition: color .3s
+}
+
+.container-technology-list a,
+.nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px
+}
+
+.card-content,
+.header {
+    box-sizing: border-box
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Inter;
+    flex-direction: column;
+    align-items: center
+}
+
+p {
+    margin: 0
+}
+
+#loading-screen {
+    position: fixed;
+    height: 100%;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 8px solid #ffffff33;
+    border-top: 8px solid #e50914;
+    border-radius: 50%;
+    animation: 1s linear infinite spin
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.header {
+    width: 100%;
+    background-color: #181818;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.logo {
+    width: 100px;
+    height: auto
+}
+
+.container {
+    flex: 1;
+    width: 78vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em
+}
+
+.container_profile {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1em
+}
+
+.container_profile_photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.profile_photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover
+}
+
+.information_container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: left
+}
+
+.username {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700
+}
+
+.career {
+    color: #fff100;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600
+}
+
+.description {
+    color: #bbb;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400
+}
+
+.arrow-tech,
+.banner-title,
+.highlights {
+    font-weight: 700;
+    font-family: Poppins
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    justify-content: left
+}
+
+.nav-links a {
+    font-family: Poppins
+}
+
+.nav-links a:hover {
+    color: #e50914
+}
+
+.nav-links a i {
+    font-family: Inter;
+    font-size: 24px
+}
+
+.highlights {
+    color: #dbdbdb;
+    font-size: 12.5px
+}
+
+.technology-scroll-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden
+}
+
+.container-technology-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    overflow-x: auto;
+    width: 99%;
+    margin: 0;
+    padding-inline: 10px;
+    scrollbar-width: none
+}
+
+.container-technology-list a {
+    min-width: 140px;
+    min-height: 40px;
+    border-radius: 20px;
+    background-color: #21222b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    text-align: center;
+    transition: background-color .3s, transform .2s, box-shadow .2s;
+    border: 1px solid #1b1c24
+}
+
+.container-technology-list a:hover {
+    background-color: #262833;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(229, 9, 20, .5)
+}
+
+.container-technology-list::-webkit-scrollbar {
+    display: none
+}
+
+.arrow-tech {
+    height: 70%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .8)
+}
+
+.banner,
+.card-wrapper {
+    position: relative
+}
+
+.arrow,
+.banner {
+    align-items: center
+}
+
+.arrow-tech.left {
+    left: 0;
+    border-radius: 0 10px 10px 0
+}
+
+.arrow-tech.right {
+    right: 0;
+    border-radius: 10px 0 0 10px
+}
+
+.banner {
+    width: 100%;
+    max-height: 440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background: linear-gradient(to right, #313030 10%, rgba(26, 25, 25, .6));
+    border-radius: 10px
+}
+
+.banner-content {
+    max-width: 50%
+}
+
+.banner-logo {
+    width: 150px
+}
+
+.banner-title {
+    color: #fff;
+    font-size: 46px
+}
+
+.banner-ranking {
+    color: #1db954;
+    font-family: Poppins;
+    font-size: 18px;
+    margin-bottom: 4px
+}
+
+.banner-description {
+    color: #bbb;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    max-height: 150px;
+    overflow: hidden;
+    overflow-y: none;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 8px
+}
+
+.banner-description::-webkit-scrollbar {
+    width: 6px
+}
+
+.banner-description::-webkit-scrollbar-track {
+    background: 0 0
+}
+
+.banner-description::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+    border: 1px solid #333
+}
+
+.toggle-description,
+.watch-button {
+    border: none;
+    color: #fff;
+    outline: 0 !important;
+    text-decoration: none !important;
+    cursor: pointer
+}
+
+.limitation-description {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700
+}
+
+.toggle-description {
+    background: 0 0;
+    font-family: Inter;
+    font-size: 16px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
+}
+
+.watch-button {
+    background-color: #e50914;
+    font-family: Poppins;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
+}
+
+.watch-button:hover {
+    background-color: #ff1c1c
+}
+
+.banner-thumbnail img {
+    max-height: 380px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .6)
+}
+
+.custom-arrow {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    background-size: 100% 100%
+}
+
+.carousel-control-next.outside-arrow,
+.carousel-control-prev.outside-arrow {
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.carousel-control-prev.outside-arrow {
+    left: -2px
+}
+
+.carousel-control-next.outside-arrow {
+    right: -2px
+}
+
+.project_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 40px
+}
+
+.section,
+.title {
+    font-weight: 700;
+    margin: 20px 0 10px;
+    width: 100%;
+    color: #fff;
+    font-family: Poppins
+}
+
+.section {
+    font-size: 32px;
+    text-align: left
+}
+
+.title {
+    font-size: 22px
+}
+
+.project_cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    scroll-snap-type: x mandatory;
+    padding: 10px 5px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none
+}
+
+.card,
+.card-content {
+    overflow: hidden;
+    display: flex
+}
+
+.project_cards::-webkit-scrollbar {
+    display: none
+}
+
+.card {
+    flex-direction: column;
+    flex: 0 0 228px;
+    height: 320px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    text-decoration: none;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .6);
+    color: #fff;
+    transition: transform .3s, background-color .3s;
+    cursor: pointer
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .8);
+    background-color: #2a2a2a
+}
+
+.card-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    flex-shrink: 0
+}
+
+.card-content {
+    flex: 1;
+    padding: 12px;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: space-between
+}
+
+.card-title {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0
+}
+
+.card-description {
+    font-family: Inter;
+    font-size: 16px;
+    color: #bbb;
+    margin: 0
+}
+
+.card-technology,
+.card-updated {
+    font-family: Inter;
+    font-size: 12.5px;
+    color: #bbb;
+    margin: 2px 0 0;
+    text-align: right
+}
+
+.arrow {
+    width: 40px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    display: none;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .8)
+}
+
+.arrow.left {
+    display: none;
+    left: -10px;
+    border-radius: 0 10px 10px 0
+}
+
+.arrow.right {
+    display: none;
+    right: -10px;
+    border-radius: 10px 0 0 10px
+}
+
+footer {
+    width: 80%;
+    height: 5vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px
+}
+
+@media (max-width:1112px) {
+    .banner-thumbnail img {
+        max-height: 260px;
+        width: auto
+    }
+
+    .banner-title {
+        font-size: 1.45rem
+    }
+
+    .banner-description {
+        overflow: hidden;
+        font-size: 1rem;
+        text-align: left
+    }
+}
+
+@media (max-width:1000px) {
+    .banner {
+        width: 100%;
+        min-height: 530px;
+        max-height: 530px;
+        flex-direction: column-reverse;
+        padding: 10px;
+        gap: 10px
+    }
+
+    .banner-content {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        padding: 0
+    }
+
+    .banner-logo {
+        width: 100px
+    }
+
+    .banner-title {
+        font-size: 1.5rem
+    }
+
+    .banner-description {
+        overflow: hidden;
+        font-size: 1.5rem;
+        text-align: left
+    }
+
+    .limitation-description {
+        color: #fff;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 700
+    }
+
+    .toggle-description {
+        background: 0 0;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 5px
+    }
+
+    .watch-button {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 1rem
+    }
+
+    .banner-thumbnail img {
+        max-height: 220px;
+        width: auto
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 90%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0
+    }
+
+    .container_profile,
+    .nav-links {
+        justify-content: center
+    }
+
+    .information_container {
+        text-align: center
+    }
+
+    .container-technology-list {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none
+    }
+
+    .container-technology-list::-webkit-scrollbar {
+        display: none
+    }
+
+    .arrow-tech {
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .banner-description {
+        overflow: hidden;
+        font-size: .95rem
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 228px;
+        height: 312px;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        text-decoration: none;
+        scroll-snap-align: start;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .6);
+        color: #fff;
+        overflow: hidden;
+        transition: transform .3s, background-color .3s;
+        cursor: pointer
+    }
+
+    .card-content {
+        gap: 0
+    }
+
+    .card-title {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0
+    }
+
+    .card-description {
+        font-size: .95rem;
+        color: #bbb;
+        margin: 0
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .arrow {
+        display: flex
+    }
+
+    .information_container {
+        text-align: left;
+        align-items: flex-start
+    }
+
+    .username {
+        font-size: 40px
+    }
+
+    .career {
+        font-size: 20px
+    }
+}
