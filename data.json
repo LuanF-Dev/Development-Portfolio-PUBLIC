@@ -14,14 +14,14 @@
         "technology": [
             "React Native (TypeScript)"
         ],
-        "banner": "/imgs/projects/RoboCore_Joystick/app_robocore_joystick_icon.png",
-        "thumbnail": "/imgs/projects/RoboCore_Joystick/app_robocore_joystick_icon.png",
+        "banner": "imgs/projects/RoboCore_Joystick/app_robocore_joystick_icon.png",
+        "thumbnail": "imgs/projects/RoboCore_Joystick/app_robocore_joystick_icon.png",
         "bannerBackgroundColor": "#FBD647",
         "projectPhotos": [
-            "/imgs/projects/RoboCore_Joystick/1.png",
-            "/imgs/projects/RoboCore_Joystick/2.png",
-            "/imgs/projects/RoboCore_Joystick/3.png",
-            "/imgs/projects/RoboCore_Joystick/4.png"
+            "imgs/projects/RoboCore_Joystick/1.png",
+            "imgs/projects/RoboCore_Joystick/2.png",
+            "imgs/projects/RoboCore_Joystick/3.png",
+            "imgs/projects/RoboCore_Joystick/4.png"
         ],
         "description": "Este projeto foi criado para ser o controle remoto do <a href='https://www.robocore.net/robotica-robocore/hockeybot/amarelo'>HockeyBot</a>, um projeto desenvolvido para os entusiastas da robótica. O desenvolvimento do aplicativo se fez necessário, para facilitar e ser uma forma mais amigável e simples de controlar um robô. O aplicativo conta com várias funcionalidades para tornar a experiência de uso mais incrível.",
         "ytVideID": "JQ6W1j1U0ew",
