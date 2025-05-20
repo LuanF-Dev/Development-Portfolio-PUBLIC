@@ -144,16 +144,16 @@
         "technology": [
             "C/C++"
         ],
-        "banner": "imgs/projects/VEMDEPIX/vemdepix_thumbnail2.png",
-        "thumbnail": "imgs/projects/VEMDEPIX/vemdepix_thumbnail2.png",
+        "banner": "/imgs/projects/VEMDEPIX/vemdepix_thumbnail2.png",
+        "thumbnail": "/imgs/projects/VEMDEPIX/vemdepix_thumbnail2.png",
         "bannerBackgroundColor": "#6DB6C9",
         "projectPhotos": [
-            "imgs/projects/VEMDEPIX/1.gif",
-            "imgs/projects/VEMDEPIX/2.png",
-            "imgs/projects/VEMDEPIX/3.png",
-            "imgs/projects/VEMDEPIX/4.png",
-            "imgs/projects/VEMDEPIX/vemdepix_halloween_1.gif",
-            "imgs/projects/VEMDEPIX/vemdepix_halloween_2.gif"
+            "/imgs/projects/VEMDEPIX/1.gif",
+            "/imgs/projects/VEMDEPIX/2.png",
+            "/imgs/projects/VEMDEPIX/3.png",
+            "/imgs/projects/VEMDEPIX/4.png",
+            "/imgs/projects/VEMDEPIX/vemdepix_halloween_1.gif",
+            "/imgs/projects/VEMDEPIX/vemdepix_halloween_2.gif"
         ],
         "description": "Com a ascensão dos jogos de aposta, há algum tempo venho trabalhando (quando possível) no meu próprio game, o “VEM DE PIX”. O projeto está sendo desenvolvido para microcontroladores e foi criado apenas para testar alguns conceitos, como o gerenciamento de recursos do controlador, especialmente a memória. O microcontrolador utilizado no projeto é o ESP32.",
         "ytVideID": "",
